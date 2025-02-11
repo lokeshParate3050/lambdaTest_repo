@@ -1,0 +1,7 @@
+image: node:18
+tasks:
+  - init: npm install
+  - command: npm test
+ports:
+  - port: 3000
+    onOpen: open-browser
